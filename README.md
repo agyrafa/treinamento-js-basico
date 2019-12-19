@@ -19,7 +19,7 @@ Com base no exercício entregue na aula 01, estilize o ToDo List para que ele fi
 É necessário adicionar, além da opção de marcar como feito, a opção de marcar como favorito (estrela vermelha)
   - Utilizar a seguinte fonte: https://fonts.google.com/specimen/Lato
   - Utilizar bibloteca de ícones: https://material.io/resources/icons/?style=baseline
-  - Utilizar SCSS.
+  - Utilizar CSS.
 
 A listagem dos itens deve apresentar os seguintes comportamentos:
   - No hover do item da listagem, caso este não esteja favoritado, deve-se mostrar a estrela apagada.
