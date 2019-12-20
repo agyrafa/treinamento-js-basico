@@ -26,3 +26,11 @@ A listagem dos itens deve apresentar os seguintes comportamentos:
 
 **Pode utilizar Flex, mas não se deve utilizar nenhuma lib externa, além da lib de ícones indicada.**
 
+
+## Exercício aula 02 - Entrega: 27/12
+
+Com base nos conteúdos apresentados e nos exercícios anteriores, evolua o exercício 2, de forma que:
+  - Utilize template literals para criar a lista (tanto de itens quanto de favoritos)
+  - Desenvolva uma lógica onde o componente de favoritos renderize apenas os itens com fav true (dica: você pode criar duas listas, uma para dar push dos itens com fav true ou utilizar filter para filtrar os objetos com fav true)
+  - O componente de favoritos pode ser uma pagina separada ou apenas uma nova sessão na mesma página
+  
