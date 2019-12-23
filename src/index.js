@@ -1,11 +1,14 @@
-function addItem(textItem){
-  var item = document.createElement('LI');
-  var text = document.createTextNode(textItem)
+const lista = [];
 
-  item.appendChild(text)
+function addItem(element){
+  lista.push(element)
+}
 
-  document.getElementById('lista').appendChild(item);
-
+//percorro todos os itens na lista, renderizando um por um na tela.
+function listItem(){
+  lista.map(item => {
+    document.getElementById('lista').innerHTML += item
+  })
 }
 
 document.getElementById('formItem').addEventListener('submit', function(event) {
@@ -13,7 +16,17 @@ document.getElementById('formItem').addEventListener('submit', function(event) {
 
   var element = document.getElementById('text-item');
 
-  addItem(element.value);
+  //envia uma template string pra ser adicionada na lista
+  addItem(`<li>${element.value}</li>`);
+
+
+  //limpa a lista pra renderizar a nova na tela
+  document.getElementById('lista').innerHTML = '';
+
+
+  //renderiza nova lista com itens adcionados
+  listItem();
+
 
   element.value = ''
 
